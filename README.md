@@ -4,6 +4,25 @@ Homebrew tap for vshuraeff packages.
 
 ## Formulae
 
+### sekretbarilo
+
+High-performance secret scanner for git workflows and AI coding agents. Pre-built binaries for macOS (Intel + Apple Silicon) and Linux (x86_64 + ARM64).
+
+#### Install
+
+```bash
+brew tap vshuraeff/tap
+brew install vshuraeff/tap/sekretbarilo
+```
+
+#### Update
+
+```bash
+brew upgrade vshuraeff/tap/sekretbarilo
+```
+
+---
+
 ### CodexBar (build from source)
 
 Builds CodexBar from source on your machine. Supports both Intel (x86_64) and Apple Silicon (arm64) Macs.
