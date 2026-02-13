@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.2.2/sekretbarilo-v0.2.2-aarch64-apple-darwin.tar.gz"
-      sha256 "0765d8728c1cf6cc30400ca331034c761eea607d4c694f76b50afe69a16df84f"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.2.3/sekretbarilo-v0.2.3-aarch64-apple-darwin.tar.gz"
+      sha256 "d985783c7d47d2246d084ad91618402e06148bfb8fc2f650e31ba3696cf4eb13"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.2.2/sekretbarilo-v0.2.2-x86_64-apple-darwin.tar.gz"
-      sha256 "a49f8becbe489d3e003285803b6ce85182312454a2de86469833bf2871cfba91"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.2.3/sekretbarilo-v0.2.3-x86_64-apple-darwin.tar.gz"
+      sha256 "3e30d55aab581f6aff7fb94b0c79943df2a10442812768b2403ef594854c56b0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.2.2/sekretbarilo-v0.2.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "55d7582a92c1e411f04989b8de609c699882c8dac24b226b8365e1290683a362"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.2.3/sekretbarilo-v0.2.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9e9bec979ee099ca39fb8870c2d82adea596d4ce3aba3d76ee38774a3e8ba995"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.2.2/sekretbarilo-v0.2.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6bfac04530adfa47690f053ec3f7c276179ad56dc49acc4b9233f8291cefe512"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.2.3/sekretbarilo-v0.2.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3561d384a438e59f29f1fca87d31e5b481eba309924a1c734a941734b9342090"
     end
   end
 
