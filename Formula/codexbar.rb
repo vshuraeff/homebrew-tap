@@ -40,16 +40,10 @@ class Codexbar < Formula
     bin.install_symlink cli_path => "codexbar" if cli_path.exist?
   end
 
-  def post_install
-    target = Pathname("/Applications/CodexBar.app")
-    target.unlink if target.symlink?
-    target.rmtree if target.exist?
-    ln_s opt_prefix/"CodexBar.app", target
-  end
-
   def caveats
     <<~EOS
-      CodexBar.app has been linked to /Applications.
+      Link CodexBar to /Applications (auto-updates on brew upgrade):
+        ln -sf "#{opt_prefix}/CodexBar.app" /Applications/
 
       The app is ad-hoc signed. On first launch macOS may block it.
       Go to System Settings > Privacy & Security and click "Open Anyway".
