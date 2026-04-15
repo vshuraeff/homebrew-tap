@@ -3,7 +3,7 @@ class Codexbar < Formula
   homepage "https://github.com/vshuraeff/CodexBar"
   url "https://github.com/vshuraeff/CodexBar.git",
       tag:      "v0.20",
-      revision: "1ecae57b21e9ce7a8de93a43a9ec7338ff60d4f9"
+      revision: "d36dc01d33b900fff2b3db093d85ddae8000eab1"
   license "MIT"
   head "https://github.com/vshuraeff/CodexBar.git", branch: "main"
 
