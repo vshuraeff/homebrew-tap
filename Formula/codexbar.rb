@@ -2,8 +2,8 @@ class Codexbar < Formula
   desc "macOS menu bar app that tracks AI coding service usage limits"
   homepage "https://github.com/vshuraeff/CodexBar"
   url "https://github.com/vshuraeff/CodexBar.git",
-      tag:      "v0.20",
-      revision: "d36dc01d33b900fff2b3db093d85ddae8000eab1"
+      tag:      "v0.22",
+      revision: "afe15bd2a156fcbc3b3ecebb966c27fecd9fa347"
   license "MIT"
   head "https://github.com/vshuraeff/CodexBar.git", branch: "main"
 
