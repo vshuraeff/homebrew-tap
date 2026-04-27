@@ -2,13 +2,13 @@ class Codexbar < Formula
   desc "macOS menu bar app that tracks AI coding service usage limits"
   homepage "https://github.com/vshuraeff/CodexBar"
   url "https://github.com/vshuraeff/CodexBar.git",
-      tag:      "v0.22",
-      revision: "afe15bd2a156fcbc3b3ecebb966c27fecd9fa347"
+      tag:      "v0.23",
+      revision: "0a830cecac791725f52d7097d10e0c1c1f0beca3"
   license "MIT"
   head "https://github.com/vshuraeff/CodexBar.git", branch: "main"
 
-  depends_on macos: :sonoma
   depends_on xcode: ["16.0", :build]
+  depends_on macos: :sonoma
 
   def install
     # Determine host architecture for single-arch build
@@ -54,6 +54,6 @@ class Codexbar < Formula
   end
 
   test do
-    assert_match "codexbar", shell_output("#{bin}/codexbar --help 2>&1", 0)
+    assert_match "codexbar", shell_output("#{bin}/codexbar --help 2>&1")
   end
 end
