@@ -2,8 +2,8 @@ class Codexbar < Formula
   desc "macOS menu bar app that tracks AI coding service usage limits"
   homepage "https://github.com/vshuraeff/CodexBar"
   url "https://github.com/vshuraeff/CodexBar.git",
-      tag:      "v0.23",
-      revision: "0a830cecac791725f52d7097d10e0c1c1f0beca3"
+      revision: "3ce6e2ac96b8f4abdddbfbf35acba317fc4f8780"
+  version "0.24"
   license "MIT"
   head "https://github.com/vshuraeff/CodexBar.git", branch: "main"
 
@@ -20,6 +20,11 @@ class Codexbar < Formula
     inreplace "Scripts/package_app.sh",
               "swift build -c",
               "swift build --disable-sandbox -c"
+    # Homebrew's sandbox blocks the xcodebuild pass used only for WidgetKit
+    # App Intents metadata. The app and CLI are usable without the widget.
+    inreplace "Scripts/package_app.sh",
+              'if [[ -n "$(resolve_binary_path "CodexBarWidget" "${ARCH_LIST[0]}")" ]]; then',
+              'if false && [[ -n "$(resolve_binary_path "CodexBarWidget" "${ARCH_LIST[0]}")" ]]; then'
 
     # Build all Swift targets for the host architecture
     system "swift", "build",
@@ -31,6 +36,26 @@ class Codexbar < Formula
     ENV["CODEXBAR_SIGNING"] = "adhoc"
     ENV["ARCHES"] = host_arch
     system "./Scripts/package_app.sh", "release"
+
+    # Avoid Homebrew's post-install rpath fixer resolving Formula["codexbar"],
+    # which is ambiguous when both steipete/tap and vshuraeff/tap are tapped.
+    sparkle_framework = buildpath/"CodexBar.app/Contents/Frameworks/Sparkle.framework"
+    sparkle_library = sparkle_framework/"Versions/B/Sparkle"
+    if sparkle_library.exist?
+      MachO::Tools.change_dylib_id(
+        sparkle_library,
+        "#{opt_prefix}/CodexBar.app/Contents/Frameworks/Sparkle.framework/Versions/B/Sparkle",
+      )
+      system "codesign", "--force", "--sign", "-", sparkle_library
+      system "codesign", "--force", "--sign", "-", sparkle_framework
+      system "codesign",
+             "--force",
+             "--sign",
+             "-",
+             "--entitlements",
+             buildpath/".build/entitlements/CodexBar.entitlements",
+             "CodexBar.app"
+    end
 
     # Install CodexBar.app into the Cellar prefix
     prefix.install "CodexBar.app"
