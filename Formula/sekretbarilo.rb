@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.4.0"
+  version "0.5.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.4.0/sekretbarilo-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "810990a253839a657a0acf3e39c989864be38a319bfbb6c135e5e068fde559f9"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.5.3/sekretbarilo-v0.5.3-aarch64-apple-darwin.tar.gz"
+      sha256 "80037b35b2acd3a0fffdb872f2d0d519a64a4e463352bf9529ee839c1c2a7849"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.4.0/sekretbarilo-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "6cc1a55b5cd6f38d5e7f29271c7960d1f298abada4f25fa421489c1467195c6e"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.5.3/sekretbarilo-v0.5.3-x86_64-apple-darwin.tar.gz"
+      sha256 "bf7a7ed930bc509438bbefd3f5ed5f6939001e857627e437b3b7227985fbdc21"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.4.0/sekretbarilo-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "812e0535e489c63e56996da7c1e41e2240e9e046642b317b598ee471b4008d83"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.5.3/sekretbarilo-v0.5.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fd0d107db061f793d017bba86b6fac928b1ba5d2b266c684e5dcbef199fdfe44"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.4.0/sekretbarilo-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1b3f728105b78c98b8ac95eedae542336f23b90ccec5970c16f84f5356ca16ec"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.5.3/sekretbarilo-v0.5.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0079c30f3f1d4b4b52a6f9d566436cd5f17c150bea7f8ec612e752ea614c410d"
     end
   end
 
