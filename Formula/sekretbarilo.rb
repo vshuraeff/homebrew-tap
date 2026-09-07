@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.5.3"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.5.3/sekretbarilo-v0.5.3-aarch64-apple-darwin.tar.gz"
-      sha256 "80037b35b2acd3a0fffdb872f2d0d519a64a4e463352bf9529ee839c1c2a7849"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.6.0/sekretbarilo-v0.6.0-aarch64-apple-darwin.tar.gz"
+      sha256 "0e68e82a3745e357d2780e45c0b8c233683e1ab10a59e8cd50643115e2c63dd9"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.5.3/sekretbarilo-v0.5.3-x86_64-apple-darwin.tar.gz"
-      sha256 "bf7a7ed930bc509438bbefd3f5ed5f6939001e857627e437b3b7227985fbdc21"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.6.0/sekretbarilo-v0.6.0-x86_64-apple-darwin.tar.gz"
+      sha256 "5235b7af0a71d3c7f2d99e54aa1e2ff06ce16b01188d6516a575e812f8638529"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.5.3/sekretbarilo-v0.5.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fd0d107db061f793d017bba86b6fac928b1ba5d2b266c684e5dcbef199fdfe44"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.6.0/sekretbarilo-v0.6.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e296da707bf057be9f298bd2be699e4a8b3aa1c00d5f8af4795e16c8d22bf61e"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.5.3/sekretbarilo-v0.5.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0079c30f3f1d4b4b52a6f9d566436cd5f17c150bea7f8ec612e752ea614c410d"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.6.0/sekretbarilo-v0.6.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c2ba89f1e2613eef3ed99c7da06ff8407f7859c616a36c8224dd0e5f43c34553"
     end
   end
 
