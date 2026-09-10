@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.6.3"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.6.3/sekretbarilo-v0.6.3-aarch64-apple-darwin.tar.gz"
-      sha256 "1189aff644f99940ca4f80b6ff1358725701b9b955c7116cd237629fe6586c38"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.7.0/sekretbarilo-v0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9aa3e1a7745b01e16df9674589c9fb616a13a97d01c499bca58b0ca368dbb5ba"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.6.3/sekretbarilo-v0.6.3-x86_64-apple-darwin.tar.gz"
-      sha256 "a428b284cff44044d77e4ddabed5b717c480a7e204715cddcd4d0ca6eb5b4517"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.7.0/sekretbarilo-v0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "11bbd7a92d2b2933e69bc73e120392f986bd67ba86942216ef9d136ddb4a617a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.6.3/sekretbarilo-v0.6.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d654d89dc4ed93a9bd0c415c5c5decc186ecf48c1aa20ca7b0839512620e56b4"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.7.0/sekretbarilo-v0.7.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fe3c2b204d08603e51b338d48111a78f342a8bac42c0ba75f8ee1898fafd4f8a"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.6.3/sekretbarilo-v0.6.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3049ccdfbbada791bba79f513dbd028b2634edd097e0235ac4aaf38cb2112b1f"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.7.0/sekretbarilo-v0.7.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4516ecd2acfa17270058efe51d39bc974f49f7ca228c23fa81c2e7a545525587"
     end
   end
 
