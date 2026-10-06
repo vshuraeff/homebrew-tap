@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.10.0/sekretbarilo-v0.10.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d21063f36f5483867e9e255fb8849b9cce1ba33712c15aa1ea4f267891bd6b06"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.0/sekretbarilo-v0.11.0-aarch64-apple-darwin.tar.gz"
+      sha256 "98261afa583cb1533f0ffc6d5c6da690d0ca5d35b1833deb9c77c4ccd85d3a56"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.10.0/sekretbarilo-v0.10.0-x86_64-apple-darwin.tar.gz"
-      sha256 "4c58cbd980375c1f1d2e5d4f60b64e9110384f6e2e7c59959893a6f10bc10bba"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.0/sekretbarilo-v0.11.0-x86_64-apple-darwin.tar.gz"
+      sha256 "de7fb08fe14c94ef7c2bfcd39772e7932e46e49f4db511e7d358266b7aca1d19"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.10.0/sekretbarilo-v0.10.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f09c3a9e87941f217a5d1d5ca92c15484533548ed42dcf8b37741a8283bb95a6"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.0/sekretbarilo-v0.11.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cf52afdf210174bc9e94ce6836238b9e8a1378df7627101c6afe8a219bb1b00f"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.10.0/sekretbarilo-v0.10.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b23405bc8847297d2bf03ab7365a0407fef4a3e19a86e1584dfafd30d2c15234"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.0/sekretbarilo-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c877002e39a11528007d656c349fd965f068a60f03dbc5915503d623dbedfea5"
     end
   end
 
