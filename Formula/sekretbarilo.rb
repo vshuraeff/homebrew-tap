@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.9.1"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.9.1/sekretbarilo-v0.9.1-aarch64-apple-darwin.tar.gz"
-      sha256 "3d0eb70008b219fb9b694feb1ccdc46f025950f71a779b7f66440ada2c98a3c0"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.10.0/sekretbarilo-v0.10.0-aarch64-apple-darwin.tar.gz"
+      sha256 "d21063f36f5483867e9e255fb8849b9cce1ba33712c15aa1ea4f267891bd6b06"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.9.1/sekretbarilo-v0.9.1-x86_64-apple-darwin.tar.gz"
-      sha256 "e38bc060f18ab534eda0b231a123206faaa1b9cc7f923832e741770b5eb8263d"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.10.0/sekretbarilo-v0.10.0-x86_64-apple-darwin.tar.gz"
+      sha256 "4c58cbd980375c1f1d2e5d4f60b64e9110384f6e2e7c59959893a6f10bc10bba"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.9.1/sekretbarilo-v0.9.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3acac9b0c3efb2359bfeb5122b78fbca9d1bf8f03d8193c1654048018bb9b25c"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.10.0/sekretbarilo-v0.10.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f09c3a9e87941f217a5d1d5ca92c15484533548ed42dcf8b37741a8283bb95a6"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.9.1/sekretbarilo-v0.9.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "36409b09284cb1b1c43fb6f17413231b00a16fcaffd1d667190b5d66c4c9ed71"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.10.0/sekretbarilo-v0.10.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b23405bc8847297d2bf03ab7365a0407fef4a3e19a86e1584dfafd30d2c15234"
     end
   end
 
