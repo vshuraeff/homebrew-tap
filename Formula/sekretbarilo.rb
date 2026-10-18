@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.11.0"
+  version "0.11.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.0/sekretbarilo-v0.11.0-aarch64-apple-darwin.tar.gz"
-      sha256 "536c8a6b927a7e9b0810d943da0658bc56e92d5530a31cca547096129ac2ddf1"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.1/sekretbarilo-v0.11.1-aarch64-apple-darwin.tar.gz"
+      sha256 "22cb08a2e95a1d36c2e3afca7cd7f9b574c7310c1d8dc8e68af855bd70410d05"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.0/sekretbarilo-v0.11.0-x86_64-apple-darwin.tar.gz"
-      sha256 "4f8743f175f883677e5295a8b40e9a723246d8752d89fd0bf6790df231ae1ea6"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.1/sekretbarilo-v0.11.1-x86_64-apple-darwin.tar.gz"
+      sha256 "80e67b212ad2504fa521c688ece15b34f0ab68c8c6c196537a9956c8db7a577b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.0/sekretbarilo-v0.11.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3b027168bcf58425a303e42ae17e9ae51a2368044cc1c6b96692daf49e04077b"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.1/sekretbarilo-v0.11.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7b3a2073ed2b4f88731ab9b5b1256c45ef52bae2a95e8137a78c9e492df3012e"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.0/sekretbarilo-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d4efd2bccb7bea7db9eb27883eaed732faf00e4299fea6589658eb530574df17"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.11.1/sekretbarilo-v0.11.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9f33b4b01bbf8541c64ec3ec01188d0377af2d202f4f468f363654d2e6ced194"
     end
   end
 
