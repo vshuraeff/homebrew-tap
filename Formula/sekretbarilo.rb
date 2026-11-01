@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.12.1"
+  version "0.12.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.12.1/sekretbarilo-v0.12.1-aarch64-apple-darwin.tar.gz"
-      sha256 "b0454dea4da54168f20dea6bbc6f9fb39f3f008d7217a006e69c51c94a99d0f2"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.12.2/sekretbarilo-v0.12.2-aarch64-apple-darwin.tar.gz"
+      sha256 "44eacbc26092e71fc41c50de452f799ee7fa70310c49da17e134cb0c1c8045d5"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.12.1/sekretbarilo-v0.12.1-x86_64-apple-darwin.tar.gz"
-      sha256 "52b88fd532694fc8e77755ac07c43ccb13642dde1d6d54a01dfb6eeb496e5e0b"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.12.2/sekretbarilo-v0.12.2-x86_64-apple-darwin.tar.gz"
+      sha256 "1fccf1f6e286126e1f724cfd3caceed95e46280c6cbc5a2bc315b4762c21addd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.12.1/sekretbarilo-v0.12.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4ea88a00c173a0e4918a32548e35890830e955ceeb5145142e89a370246b2d98"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.12.2/sekretbarilo-v0.12.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "49369abb04c4534b753d2592bd31aa8e5821bdea3aae5205723d4afd297a666b"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.12.1/sekretbarilo-v0.12.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "44b6e550d03c5598949be55e99da9f360dab1219cf7354b7bc845cfa8a99943a"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.12.2/sekretbarilo-v0.12.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5a4fd00401673ad332edea0f687c5d0b7166116e52c5af8cec8ea4354cc65955"
     end
   end
 
