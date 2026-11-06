@@ -1,26 +1,26 @@
 class Sekretbarilo < Formula
   desc "High-performance secret scanner for git workflows and AI coding agents"
   homepage "https://github.com/vshuraeff/sekretbarilo"
-  version "0.13.0"
+  version "0.13.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.13.0/sekretbarilo-v0.13.0-aarch64-apple-darwin.tar.gz"
-      sha256 "a7834f46c8980b261d3528527049b63ee08b983c9c08e371e802646634e09901"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.13.1/sekretbarilo-v0.13.1-aarch64-apple-darwin.tar.gz"
+      sha256 "1c3da259a77308654c270a8696bfea22fc57ea3516829b72cb5f1e11ab6c5b8d"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.13.0/sekretbarilo-v0.13.0-x86_64-apple-darwin.tar.gz"
-      sha256 "c89b3274a32aebbe4c550f7174bcf52d6c21af2cf258c0991cd8410490b30d71"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.13.1/sekretbarilo-v0.13.1-x86_64-apple-darwin.tar.gz"
+      sha256 "a93dc1b1eff37304318f305df39865a712fed13a36d10cd7a6280efd97efc981"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.13.0/sekretbarilo-v0.13.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "09b4edc860a07e7c882b56f5ec5e17cefb81d582d7901f22aebc29bd8d480435"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.13.1/sekretbarilo-v0.13.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bdbcc515c23c59c032af25d9f147a9a5929c5e55889774aec77159e314ed88cd"
     else
-      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.13.0/sekretbarilo-v0.13.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "efce26f92ab66652dff93e988ad4049780b287e4776099f1738f9eb59273336a"
+      url "https://github.com/vshuraeff/sekretbarilo/releases/download/v0.13.1/sekretbarilo-v0.13.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "70114cd2f2985cab27bd918f22ab99f7f052a3d28d0eac9c73ae004a9a664a7c"
     end
   end
 
